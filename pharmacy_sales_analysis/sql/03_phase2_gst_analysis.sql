@@ -59,3 +59,7 @@ sum(gst_28) as gst28_collected,
 sum(tot_gst) as total_gst_collected
 from pharmacy_sales;
 
+--5. GST contribution to toal sales  
+select sum(tot_sale) as total_sales, sum(tot_gst) as total_gst,
+round( sum(tot_gst) / sum(tot_sale) * 100, 2 ) as gst_as_pct_of_total_sales 
+from pharmacy_sales;
