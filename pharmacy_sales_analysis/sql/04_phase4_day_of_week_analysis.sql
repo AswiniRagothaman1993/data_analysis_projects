@@ -1,5 +1,5 @@
 /* Project: Pharmacy Sales Analysis 
-File: 06_phase5_day_of_week_analysis.sql 
+File: 04_phase4_day_of_week_analysis.sql 
 
 Purpose: Analyze sales performance by day of the week to identify 
 weekday-level patterns in sales, bill volume and average bill value. 

@@ -1,5 +1,5 @@
 /* Project: Pharmacy Sales Analysis 
-File: 04_phase3_monthly_analysis.sql 
+File: 03_phase3_monthly_analysis.sql 
 Purpose: Analyze monthly sales performance and compare each month's performance with the previous month. 
 Metrics: Total Bills , Total Sales, Total GST Collected , Average Bill Value , Month-over-Month Growth
 

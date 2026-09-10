@@ -1,6 +1,6 @@
 /* Pharmacy sales analysis
 
-File : 02_phase1_overall_performance.sql
+File : 01_phase1_overall_performance.sql
 
 Purpose : Measure the overall sales performance of the pharmacy during the three-month analysis period.
 

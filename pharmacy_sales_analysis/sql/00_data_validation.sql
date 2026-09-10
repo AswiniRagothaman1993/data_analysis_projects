@@ -1,6 +1,6 @@
 /* Pharmacy sales analysis
 
-File : 01_data_validation.sql
+File : 00_data_validation.sql
 
 Purpose : Validate data completeness, consistency, bill numbering,
 GST calculations, sales reconciliation and reporting-date patterns
@@ -52,6 +52,7 @@ select bill_dt, start_bno, previous_reporting_period_end_bno+1 as expected_start
 start_bno - (previous_reporting_period_end_bno+1) as difference,
 case when start_bno  > previous_reporting_period_end_bno +1 then 'gap'
 	 when start_bno <= previous_reporting_period_end_bno then 'overlap'
+	 else 'continuous'
 	 end as "date_issue"
 from bill_number_cte
 where start_bno >  previous_reporting_period_end_bno+1 or
@@ -76,7 +77,7 @@ max(abs(gst_difference)) as max_gst_difference
 from reconciliation_cte; -- 76	0	0	0.01	0.01
 
 -- Differences up to 0.01 were treated as rounding differences.
--- No material sales or GST reconciliation discrepancies were identified.
+-- No sales or GST reconciliation discrepancies were identified.
 
 --7. Missing dates and reporting patterns
 
@@ -100,7 +101,8 @@ group by day_name;
 -- Business rule:
 -- Sundays sales are included in saturday reporting period.
 -- Public holiday sales are included in preceeding reporting period.
--- Therefore, Sundays and Public holidays are expected to be absent from the source data and should not be treated as data-quality issues.
+-- Therefore, Sundays and Public holidays are expected to be absent from the source data 
+--and should not be treated as data-quality issues.
 
 
 

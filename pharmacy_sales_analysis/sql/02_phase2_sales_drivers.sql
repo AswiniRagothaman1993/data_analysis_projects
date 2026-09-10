@@ -1,7 +1,7 @@
 /* Project: Pharmacy Sales Analysis 
-File: 05_phase4_reporting_period_analysis.sql 
+File: 02_phase2_sales_drivers.sql 
 
-Purpose: Analyze pharmacy performance 
+Purpose: Analyze pharmacy performance and explore what factors drives sales 
 based on the reporting-period classification identified from the business reporting process. 
 
 Reporting Period Types: 1. Individual Day 2. Accumulated Day 
@@ -107,5 +107,3 @@ select "Reporting day type", round(corr(bill_counts, tot_sale)::numeric,3) as bi
 round(corr(avg_bill_value, tot_sale)::numeric,3) as avg_bill_value_sales_correlation
 from pharmacy_sales_view
 group by "Reporting day type";
-
-

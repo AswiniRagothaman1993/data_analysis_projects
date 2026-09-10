@@ -1,5 +1,5 @@
 /* Project: Pharmacy Sales Analysis 
-File: 03_phase2_gst_analysis.sql 
+File: 05_phase5_gst_analysis.sql 
 Purpose: Analyze the distribution of sales and GST collection across different GST slabs 
 and compare taxable and exempt sales. 
 
@@ -30,20 +30,20 @@ from GST_analysis_cte;
 with total_sales_cte as(
 (select 'Exempt' as Sales_category, sum(exempt) as Total_value from pharmacy_sales)
 union all
-(select 'GST_5%', sum(amt_5) from pharmacy_sales)
+(select 'GST_5%', sum(amt_5)+sum(gst_5) from pharmacy_sales)
 union all
-(select 'GST_12%', sum(amt_12) from pharmacy_sales)
+(select 'GST_12%', sum(amt_12)+sum(gst_12) from pharmacy_sales)
 union all
-(select 'GST_18%' , sum(amt_18) from pharmacy_sales)
+(select 'GST_18%' , sum(amt_18)+sum(gst_18) from pharmacy_sales)
 union all
-(select 'GST_28%' , sum(amt_28) from pharmacy_sales))
+(select 'GST_28%' , sum(amt_28)+sum(gst_28) from pharmacy_sales))
 select Sales_category, Total_value, round(Total_value/sum(Total_value) over()*100,2) as Sales_contribution_pct
 from total_sales_cte;
-/* "Exempt"	51758.41	2.55
-"GST_5%"	1929289.47	94.91
+/* "Exempt"	51758.41	2.42
+"GST_5%"	2025753.89	94.73
 "GST_12%"	0.00	    0.00
-"GST_18%"	51623.89	2.54
-"GST_28%"	0.00	    0.00 */
+"GST_18%"	60916.22	2.85
+"GST_28%"	0.00	    0.00*/
 
 --3. exempt vs taxable contribution 
 select round(sum(exempt)/ sum(tot_sale)*100,2) as exempt_pct,
