@@ -289,17 +289,7 @@ Analyzes:
 - Month-over-month bill growth
 - Month-over-month average bill value growth
 
-### Page 4 — GST Analysis
-
-Analyzes:
-
-- GST collected by slab
-- Sales contribution by GST slab
-- Monthly GST by slab
-- Total GST
-- GST as a percentage of total sales
-
-### Page 5 — Day-of-Week Analysis
+### Page 4 — Day-of-Week Analysis
 
 Analyzes:
 
@@ -309,19 +299,30 @@ Analyzes:
 - Average bill value
 - Individual-day weekday performance
 
+### Page 5 — GST Analysis
+
+Analyzes:
+
+- GST collected by slab
+- Sales contribution by GST slab
+- Monthly GST by slab
+- Total GST
+- GST as a percentage of total sales
+
+
 ---
 
-# 💡 Key Business Findings
+# Key Business Findings
 
-1. **May sales increased by 6.38%**, while bill volume remained almost unchanged. The increase was associated with a **6.23% increase in average bill value**.
+1. **May sales increased by 6.38%**, while bill volume remained almost unchanged. The increase was associated with a **6.46% increase in average bill value**.
 
-2. **June sales declined by 7.87%** despite a slight increase in bill volume. The decline was associated with an **8.42% decrease in average bill value**.
+2. **June sales declined by 7.87%** despite a slight increase in bill volume. The decline was associated with an **8.44% decrease in average bill value**.
 
 3. **Thursday was the strongest individual weekday**, with the highest average sales per reporting period and highest average bill value.
 
 4. **Friday was the weakest individual weekday**, with the lowest average sales per reporting period and lowest average bill value.
 
-5. The **5% GST slab accounted for 94.91% of sales contribution**, making it the dominant GST category in the dataset.
+5. The **5% GST slab accounted for 94.73% of sales contribution**, making it the dominant GST category in the dataset.
 
 6. Sales showed positive relationships with both **bill volume** and **average bill value**.
 
@@ -329,7 +330,7 @@ Analyzes:
 
 ---
 
-# ⚠️ Limitations
+# Limitations
 
 The dataset has several limitations:
 
@@ -345,7 +346,7 @@ Therefore, the findings should be interpreted as descriptive and exploratory ins
 
 ---
 
-# 🚀 Project Outcome
+# Project Outcome
 
 This project demonstrates an end-to-end data analysis workflow:
 
@@ -355,30 +356,3 @@ The project focuses not only on visualization but also on understanding the unde
 
 ---
 
-## 📁 Project Structure
-
-```text
-pharmacy-sales-gst-analysis/
-│
-├── README.md
-│
-├── SQL/
-│   ├── 01_data_validation.sql
-│   ├── 02_monthly_analysis.sql
-│   ├── 03_sales_drivers.sql
-│   ├── 04_reporting_day_analysis.sql
-│   ├── 05_gst_analysis.sql
-│   └── 06_day_of_week_analysis.sql
-│
-├── PowerBI/
-│   └── Pharmacy_Sales_GST_Analysis.pbix
-│
-├── Documentation/
-│   └── Project_Notes.docx
-│
-└── Screenshots/
-    ├── page_1_overall_performance.png
-    ├── page_2_sales_trends_drivers.png
-    ├── page_3_monthly_performance.png
-    ├── page_4_gst_analysis.png
-    └── page_5_day_of_week_analysis.png
