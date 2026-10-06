@@ -148,28 +148,6 @@ where student_rank <=3;
 
 
 
---order table -- product table
---product not having orders
-
-select p.productid, p.productname
-from product p
-join order a
-on p.productid <> a.productid
-where a.productid is null;
-
-
---sales , product 
-
---top3 products by total sales for each month
-
-select top 3 p.productid, month(s.order_date), sum(amount) as total_sales
-from products p
-join sales s
-on p.productid =s.productid
-group by p.productid, s.order_month
-order by total_sales desc;
-
-
 
 
 
