@@ -1,0 +1,11 @@
+HistoryID,PatientID,Date,Condition,Surgeries,Medication
+H0001,P0001,11/1/2023 8:00,Hypertension,Appendectomy,Lisinopril
+H0002,P0002,11/2/2023 9:00,Diabetes,None,Metformin
+H0003,P0003,11/3/2023 10:00,Asthma,Tonsillectomy,Albuterol
+H0004,P0004,11/4/2023 11:00,Migraine,Appendectomy,Ibuprofen
+H0005,P0005,11/5/2023 12:00,Diabetes,None,Insulin
+H0006,P0006,11/6/2023 13:00,Asthma,Tonsillectomy,Albuterol
+H0007,P0007,11/7/2023 14:00,Hypertension,Appendectomy,Lisinopril
+H0008,P0008,11/8/2023 15:00,Diabetes,None,Metformin
+H0009,P0009,11/9/2023 16:00,Asthma,Tonsillectomy,Albuterol
+H0010,P0010,11/10/2023 17:00,Migraine,Appendectomy,Ibuprofen

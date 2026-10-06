@@ -1,0 +1,5 @@
+faculty_id,first_name,last_name,department,email,,Salary
+1,Dr. Adams,Wilson,Computer Science,adams@example.com,,80000
+2,Dr. White,Clark,Mathematics,white@example.com,,75000
+3,Dr. Green,Brown,Physics,green@example.com,,82000
+4,Dr. Blue,Black,Chemistry,blue@example.com,,85000

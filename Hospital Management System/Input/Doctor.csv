@@ -1,0 +1,4 @@
+DoctorID,Fname,Lname,Speciality,ContactEmail
+D0001,Dr. John,Doe,General Physician,john.doe@example.com
+D0002,Dr. Jane,Smith,Pediatrician,jane.smith@example.com
+D0003,Dr. Michael,Johnson,Cardiologist,michael.j@example.com

@@ -1,0 +1,13 @@
+StudentID,Name,Age,Gender,Major,EnrollmentDate,Status
+1,John Doe,20,Male,Computer Science,2022-08-15,Active
+2,Jane Smith,21,Female,Mathematics,2021-09-10,Graduated
+3,Emily Johnson,19,Female,Physics,2023-01-20,Active
+4,Michael Brown,22,Male,Computer Science,2021-06-14,Graduated
+5,Sarah Lee,20,Female,Biology,2022-07-19,Active
+6,William Turner,23,Male,Chemistry,2020-08-10,Graduated
+7,Olivia Carter,22,Female,Psychology,2021-09-05,Active
+8,James Anderson,22,Male,Computer Science,2021-07-10,Active
+9,Charlotte Davis,20,Female,Chemistry,2022-03-01,Active
+10,Benjamin Martinez,21,Male,Biology,2021-05-25,Graduated
+11,Amelia Wilson,22,Female,Physics,2021-11-30,Active
+12,Oliver Harris,23,Male,Psychology,2020-12-15,Graduated
